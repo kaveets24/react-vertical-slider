@@ -1,0 +1,40 @@
+// The idea for the space-unit and space-unit-fixed functions are borrowed from: https://medium.com/codyhouse/create-your-design-system-part-4-spacing-895c9213e2b9
+
+$space-unit: 1em;
+$space-unit-fixed: 1rem;
+
+@function space-unit($size) {
+  @if ($size == "xxs") {
+    @return 0.25 * $space-unit;
+  } @else if ($size == "xs") {
+    @return 0.5 * $space-unit;
+  } @else if ($size == "small") {
+    @return 0.75 * $space-unit;
+  } @else if ($size == "medium") {
+    @return 1.25 * $space-unit;
+  } @else if ($size == "large") {
+    @return 1.5 * $space-unit;
+  } @else if ($size == "xl") {
+    @return 2 * $space-unit;
+  } @else if ($size == "xxl") {
+    @return 3 * $space-unit;
+  }
+}
+
+@function space-unit-fixed($size) {
+  @if ($size == "xxs") {
+    @return 0.25 * $space-unit-fixed;
+  } @else if ($size == "xs") {
+    @return 0.5 * $space-unit-fixed;
+  } @else if ($size == "small") {
+    @return 0.75 * $space-unit-fixed;
+  } @else if ($size == "medium") {
+    @return 1.25 * $space-unit-fixed;
+  } @else if ($size == "large") {
+    @return 1.5 * $space-unit-fixed;
+  } @else if ($size == "xl") {
+    @return 2 * $space-unit-fixed;
+  } @else if ($size == "xxl") {
+    @return 3 * $space-unit-fixed;
+  }
+}

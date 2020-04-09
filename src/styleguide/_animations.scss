@@ -1,0 +1,27 @@
+// Appear
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appearEaseInSlow {
+  animation: appear 0.5s ease-in;
+}
+
+// Hide
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hideEaseOutSlow {
+  animation: hide 0,5s ease-out;
+}
