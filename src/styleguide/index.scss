@@ -12,3 +12,11 @@
 
 // Animations
 @import "animations";
+
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Hide scrollbars */
+    margin: 0;
+    
+}
