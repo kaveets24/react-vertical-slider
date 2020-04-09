@@ -8,5 +8,6 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     height: 100vh;
 }
