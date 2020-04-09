@@ -11,7 +11,7 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
   plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "docs"),
     compress: true,
     port: PORT,
     hotOnly: true,
