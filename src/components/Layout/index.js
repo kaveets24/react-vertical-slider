@@ -4,6 +4,7 @@ import "./style.scss";
 
 // Components
 import Slide from "../Slide";
+import Links from "../Links";
 
 const slides = [
   "Hey",
@@ -25,7 +26,10 @@ function Layout() {
       </Slide>
     );
   });
-  return <div className="layout">{renderChildren}</div>;
+  return <div className="layout">
+    <Links slides={slides} />
+    {renderChildren}
+    </div>;
 }
 
 export default Layout;

@@ -1,0 +1,11 @@
+@import "../../styleguide";
+
+.links {
+  position: fixed;
+background-color: $grey;
+  .link {
+    font-family: "DM Sans", sans-serif;
+    color: $black;
+    margin: 0 $space-unit;
+  }
+}
